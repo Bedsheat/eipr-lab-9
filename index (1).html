@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>CargoMind AI | Smarter freight for every transporter</title><meta name="description" content="CargoMind AI helps transporters book faster, price fairly, track deliveries and avoid losses, in their own language."><style>:root{--navy:#0B2545;--teal:#13A89E;--amber:#F4A300;--bg:#fff;--soft:#F3F6FA;--text:#1d2733;--muted:#5B6675;--line:#dde3ea}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1621;--soft:#16222f;--text:#e6ecf2;--muted:#9fb0c2;--line:#2a3a4b}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;font-family:"Segoe UI",Calibri,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--teal)}img{max-width:100%}
+.top{background:var(--navy);color:#cfe3f3;font-size:13px;padding:6px 20px;display:flex;flex-wrap:wrap;gap:4px 24px;justify-content:space-between}
+.top a{color:#cfe3f3;text-decoration:none}
+header{background:var(--bg);position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line)}
+nav{max-width:1100px;margin:auto;padding:12px 20px;display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center}
+.logo{font-size:24px;font-weight:800;color:var(--navy);text-decoration:none;margin-right:auto;display:flex;align-items:center;gap:8px}
+@media (prefers-color-scheme:dark){.logo{color:#fff}}
+.logo i{width:34px;height:34px;border-radius:8px;background:var(--teal);color:#fff;font-style:normal;display:flex;align-items:center;justify-content:center;font-size:16px}
+nav a.l{color:var(--text);text-decoration:none;font-weight:600;font-size:15px}nav a.l:hover,nav a.on{color:var(--teal)}
+.btn{display:inline-block;background:var(--teal);color:#fff;padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:700;margin:6px 6px 6px 0}.btn.amb{background:var(--amber);color:#0B2545}.btn.ghost{background:transparent;border:2px solid #fff;color:#fff}
+.hero{background:linear-gradient(135deg,#0B2545 0%,#0f4a63 60%,#13A89E 140%);color:#fff;padding:90px 20px}
+.wrap{max-width:1100px;margin:auto}.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.15;margin:0 0 16px}.hero p{font-size:20px;max-width:640px;color:#d8eaf5}
+.hero .kick,.kick{color:var(--amber);font-weight:700;letter-spacing:2px;font-size:13px;text-transform:uppercase}
+.banner{background:linear-gradient(135deg,#0B2545,#0f4a63);color:#fff;padding:56px 20px}.banner h1{margin:0;font-size:40px}.banner small{color:#cfe3f3}
+.strip{background:var(--soft);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;padding:26px 20px;text-align:center}
+.strip div b{display:block;font-size:34px}.strip div span{font-weight:700;color:var(--navy)}
+@media (prefers-color-scheme:dark){.strip div span{color:#fff}}
+section{padding:64px 20px}section.alt{background:var(--soft)}
+h2{font-size:clamp(26px,4vw,38px);line-height:1.25;margin:6px 0 12px;color:var(--navy)}
+@media (prefers-color-scheme:dark){h2{color:#fff}}
+.center{text-align:center}.lead{color:var(--muted);max-width:680px;font-size:18px}.center .lead{margin:0 auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:34px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:26px;box-shadow:0 4px 14px rgba(11,37,69,.06)}
+.card .ic{font-size:34px;display:block;margin-bottom:8px}.card h3{margin:0 0 6px;font-size:20px}.card p{margin:0;color:var(--muted)}
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;align-items:center}
+.vid{aspect-ratio:16/9;border-radius:14px;background:linear-gradient(135deg,#0B2545,#13A89E);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;padding:20px}
+.vid .play{width:70px;height:70px;border-radius:50%;background:#fff;color:#0B2545;font-size:28px;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
+.vid a{color:#fff;font-weight:700}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:34px;counter-reset:n}
+.step{text-align:center;padding:10px}.step:before{counter-increment:n;content:counter(n);display:flex;width:54px;height:54px;border-radius:50%;background:var(--amber);color:#0B2545;font-weight:800;font-size:22px;align-items:center;justify-content:center;margin:0 auto 12px}
+.step h3{margin:0 0 4px}.step p{margin:0;color:var(--muted)}
+.story{border-left:5px solid var(--amber);background:var(--bg);border-radius:10px;padding:22px 26px}
+.story em{color:var(--teal);font-style:normal;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:1px}
+.price{text-align:center}.price .card{padding:30px 20px}.price b{font-size:34px;display:block;color:var(--teal)}.price.hot .card{border:2px solid var(--amber)}
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;margin-top:34px;max-width:760px;margin-left:auto;margin-right:auto}
+.member{text-align:center}.av{width:140px;height:140px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--navy));color:#fff;font-size:46px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
+.member h3{margin:0}.member span{color:var(--teal);font-weight:700}.member p{color:var(--muted);margin:8px 0 0}
+.cta{background:linear-gradient(135deg,#0B2545,#0f4a63);color:#fff;text-align:center;padding:64px 20px}.cta h2{color:#fff}.cta p{color:#d8eaf5;font-size:19px;max-width:640px;margin:0 auto 20px}
+footer{background:#071a33;color:#b9cde0;padding:48px 20px 20px;font-size:15px}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;max-width:1100px;margin:auto}
+footer h4{color:#fff;margin:0 0 10px;letter-spacing:1px}footer a{color:#b9cde0;text-decoration:none;display:block;padding:2px 0}footer a:hover{color:var(--amber)}
+footer .copy{text-align:center;margin-top:30px;border-top:1px solid #1d3556;padding-top:16px;font-size:13px}
+.strip.s2{background:none;border:0}</style></head><body>
+<div class="top"><span>Welcome to CargoMind AI. We help every transporter move freight with confidence.</span><span><a href="mailto:gyana.karn25@spit.ac.in">Email: gyana.karn25@spit.ac.in</a> &nbsp; <a href="tel:+919540079857">Call Us: +91 95400 79857</a></span></div>
+<header><nav><a class="logo" href="#home"><i>C</i>CargoMind AI</a><a class="l" href="#home">Home</a><a class="l" href="#about">About</a><a class="l" href="#team">Team</a><a class="l" href="#pricing">Pricing</a><a class="l" href="CargoMindAI_Startup_Profile.pdf">Startup Profile</a><a class="l" href="CargoMindAI_Brochure.pdf">Brochure</a><a class="l" href="#careers">Careers</a><a class="l" href="#contact">Contact Us</a></nav></header>
+<div class="hero" id="home"><div class="wrap"><div class="kick">Smarter freight for every transporter</div><h1>Less paperwork.<br>Fairer prices.<br>Fewer surprises.</h1>
+<p>CargoMind AI turns a photo of your waybill into a ready booking, tells you a fair price and delivery time, and warns you before a problem becomes a loss. You can even use it by speaking in your own language.</p>
+<a class="btn amb" href="#contact">Join our free pilot</a><a class="btn ghost" href="about.html">Our story</a></div></div>
+<div class="strip"><div class="wrap"><div><b>📸</b><span>Photo to booking</span></div><div><b>💰</b><span>Fair prices</span></div><div><b>⏱️</b><span>Reliable delivery times</span></div><div><b>🛡️</b><span>Fewer losses</span></div><div><b>🗣️</b><span>Your own language</span></div></div></div>
+<section id="features"><div class="wrap center"><div class="kick">What we do</div><h2>Everything a busy transport office needs, in one place</h2><p class="lead">No more re-typing bilties, guessing rates or answering “where is my truck?” calls all day.</p>
+<div class="cards">
+<div class="card"><span class="ic">📸</span><h3>Snap and done</h3><p>Take a photo of any handwritten or printed bilty. Your booking is filled in for you in about a minute.</p></div>
+<div class="card"><span class="ic">💰</span><h3>Know the right price</h3><p>See a fair price range for every load and lane, so you quote with confidence and never leave money on the table.</p></div>
+<div class="card"><span class="ic">⏱️</span><h3>Promise the right time</h3><p>Get a realistic delivery window and an early warning if a delay is likely, so customers are never surprised.</p></div>
+<div class="card"><span class="ic">🛡️</span><h3>Spot problems early</h3><p>If the weight, the paperwork and the price do not match, we tell you before the truck leaves.</p></div>
+<div class="card"><span class="ic">🗣️</span><h3>Just speak</h3><p>Drivers and customers can call or send a voice note in Hindi, Marathi, Gujarati or Tamil and get clear answers.</p></div>
+<div class="card"><span class="ic">📈</span><h3>Gets better every day</h3><p>The more your team uses it, the smarter and faster it becomes at your kind of work.</p></div></div></div></section>
+<section id="how"><div class="wrap center"><div class="kick">Simple to start</div><h2>How it works</h2>
+<div class="steps"><div class="step"><h3>Take a photo</h3><p>Of the bilty, on your phone or WhatsApp.</p></div><div class="step"><h3>Check a few fields</h3><p>We only ask about what we are unsure of.</p></div><div class="step"><h3>Get your quote</h3><p>A fair price range and delivery window.</p></div><div class="step"><h3>Dispatch with peace of mind</h3><p>We warn you if something looks wrong.</p></div></div></div></section>
+<section class="alt" id="video"><div class="wrap"><div class="split"><div><div class="kick">Watch our story</div><h2>See CargoMind AI in action</h2><p class="lead">A short video that shows how a bilty becomes a booking, and how a driver gets an answer by simply asking.</p><a class="btn" href="CargoMindAI_Brochure.pdf">Download brochure</a></div>
+<div><div class="vid" style="padding:0;overflow:hidden;background:#000"><iframe src="https://drive.google.com/file/d/14ylHZDIq20i2POsPyApcqZGrw_29t70h/preview" title="CargoMind AI promotional video" allow="autoplay; fullscreen" allowfullscreen style="width:100%;height:100%;border:0"></iframe></div><p style="margin:8px 0 0;font-size:14px"><a href="https://drive.google.com/file/d/14ylHZDIq20i2POsPyApcqZGrw_29t70h/view?usp=sharing" target="_blank" rel="noopener">Open the video in a new tab</a></p></div></div></div></section>
+<section id="about"><div class="wrap"><div class="split"><div><div class="kick">About us</div><h2>Let us tell you our story</h2><p>Across India, goods travel on handwritten consignment notes, phone-call prices and guesswork. Our founders saw this first-hand in a family cargo business, and decided small transporters and drivers deserve the same smart tools big companies have.</p><p>CargoMind AI makes freight simpler: less typing, fairer prices, reliable delivery times and early warnings, all in the language you are comfortable with.</p></div>
+<div class="card"><span class="ic">🚚</span><h3>From a family cargo business</h3><p>We grew up around bilties, phone-call prices and “where is my truck?” calls. CargoMind AI is our answer.</p></div></div></div></section>
+<section class="alt" id="promise"><div class="wrap center"><div class="kick">Our promise</div><h2>What we stand for</h2>
+<div class="cards"><div class="card"><span class="ic">🎯</span><h3>Our vision</h3><p>To be the trusted smart assistant of Indian road freight, so every transporter and driver can plan with confidence.</p></div>
+<div class="card"><span class="ic">🤝</span><h3>Our mission</h3><p>Fair prices, dependable delivery times and early warnings, in every user’s own language.</p></div>
+<div class="card"><span class="ic">🔒</span><h3>Our values</h3><p>Customers first, honest numbers, respect for your data, and technology that includes everyone.</p></div></div></div></section>
+<section id="who"><div class="wrap center"><div class="kick">Who we help</div><h2>Made for the people who keep India moving</h2>
+<div class="cards"><div class="story"><em>Booking clerk (example)</em><p>“Every evening I type 100 bilties. With CargoMind AI I check a few fields and I am done early.”</p></div>
+<div class="story"><em>Fleet owner (example)</em><p>“I want to know if a price is fair before I say yes, and to catch wrong weights before dispatch.”</p></div>
+<div class="story"><em>Driver (example)</em><p>“I do not type. I just call, speak in Marathi and get the answer.”</p></div></div><p class="lead" style="margin-top:14px"><small>These are illustrative scenarios, not customer reviews. We are preparing our first pilot.</small></p></div></section>
+<section class="alt" id="pricing"><div class="wrap center"><div class="kick">Simple pricing</div><h2>Start free. Pay only as you grow.</h2><p class="lead">Monthly plans, excluding GST. Proposed prices that we will fine-tune with our pilot partners.</p>
+<div class="cards price"><div class="card"><h3>Lite</h3><b>Free</b><p>Try bilty scanning for single agents</p></div><div class="card"><h3>Starter</h3><b>₹999</b><p>Scanning, price range and delivery time for one office</p></div><div class="card"><h3>Pro</h3><b>₹2,999</b><p>Per branch. Fraud alerts, voice help and more waybills for growing fleets</p></div><div class="card"><h3>Enterprise</h3><b>Custom</b><p>For large logistics companies and shippers</p></div></div></div></section>
+<section><div class="wrap center"><div class="kick">Why it matters</div><h2>Built for a market that is ready for change</h2>
+<div class="strip s2"><div class="wrap"><div><b style="color:var(--teal)">3.5 million</b><span>truck operators in India</span></div><div><b style="color:var(--teal)">12.5 million</b><span>trucks on the road</span></div><div><b style="color:var(--teal)">3 in 4</b><span>trucks owned by small operators</span></div></div></div></div></section>
+<section id="team"><div class="wrap center"><div class="kick">Meet our team</div><h2>The Great Team Will Always Help You</h2>
+<div class="team"><div class="member"><div class="av">GK</div><h3>Gyana Karn</h3><span>Founder &amp; Director</span><p>Builds the technology behind CargoMind AI.<br>+91 95400 79857</p></div>
+<div class="member"><div class="av">JK</div><h3>Jitendra Karn</h3><span>Co-founder &amp; Director</span><p>Leads operations and works with transporters.</p></div></div></div></section>
+<section class="alt" id="careers"><div class="wrap center"><div class="kick">Careers</div><h2>Help us move India forward</h2><p class="lead">We will soon be hiring field sales executives, software developers, AI engineers and data quality associates. Send us your story and we will stay in touch.</p><a class="btn" href="mailto:gyana.karn25@spit.ac.in">Write to us</a></div></section>
+<div class="cta" id="contact"><h2>Ready to move smarter?</h2><p>Join our free 3-month pilot, or write to us with your questions. We would love to hear from you.</p><a class="btn amb" href="mailto:gyana.karn25@spit.ac.in">Email us</a><a class="btn ghost" href="tel:+919540079857">Call +91 95400 79857</a></div><footer><div class="cols"><div><h4>CARGOMIND AI</h4><p>Sardar Patel Institute of Technology,<br>Bhavan’s Campus, Munshi Nagar,<br>Andheri (W), Mumbai 400058</p><p>Email: gyana.karn25@spit.ac.in<br>+91 95400 79857</p></div>
+<div><h4>QUICK LINKS</h4><a href="#home">Home</a><a href="#about">About</a><a href="#team">Team</a><a href="CargoMindAI_Startup_Profile.pdf">Startup Profile</a><a href="CargoMindAI_Brochure.pdf">Brochure</a><a href="#careers">Careers</a></div>
+<div><h4>WE HELP</h4><a href="#who">Transport companies</a><a href="#who">Booking agents</a><a href="#who">Drivers</a><a href="#who">Shippers</a></div></div>
+<div class="copy">© 2026 CargoMind AI. All rights reserved.</div></footer></body></html>
